@@ -1,0 +1,97 @@
+*{
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.dash-title{
+    width: auto;
+    height: 2px;
+    background-color: rgb(87, 191, 240);
+    border-radius: 20px;   
+}
+.card-title{
+    letter-spacing: 1px;
+}
+
+.dash{
+    width: 150px;
+    height: 5px;
+    background-color: rgb(87, 191, 240);
+    border-radius: 20px;
+}
+.cards img{
+    border: 4px solid sandybrown;
+    border-radius: 10px;
+}
+.father{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+}
+.cards{
+    margin-bottom: 100px;
+}
+.card-body{
+    position: relative;
+    left: 200px;
+    bottom: 200px;
+}
+
+/*Responsive*/
+
+@media (min-width:370px) and (max-width:800px) {
+    header{
+        width: 100% !important;
+        margin: 0 2.5rem;
+    }
+    .containers{   
+        width: 100% !important;
+        margin:0 4rem;
+        margin-top: 10%;
+    }
+    .btns{
+        margin: auto;
+    }
+    .father{
+        max-width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .father img{
+        margin-top: 50px;
+        width: 40%;
+    }
+    .card-body{
+        margin-left: -30px;
+        margin-top: 25px; 
+    }
+    .img-container{
+        display: inline;
+        background: #000;
+    }
+    .card-body h5{
+        font-size: 2rem !important;
+    }
+    
+}
+
+@media (min-width:801px) and (max-width:1201px) {
+    .father{
+        margin-top: 2rem !important;
+        margin-left: -10rem !important;
+    }
+    .card-body{
+        margin-right: 5rem !important;
+    }
+    .card-body h5{
+        font-size: 2rem !important;
+    }
+    .containers .btns{
+        margin: 0 2rem;
+    }
+    .containers button{
+        font-size: 4rem;
+    }
+}
