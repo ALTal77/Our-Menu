@@ -1,5 +1,4 @@
 "use strict";
-
 const menu=[{
     id:1,
     title:'Fish & Vegtebles',
@@ -87,21 +86,21 @@ function renderItem(itemMenu){
     let filter=itemMenu.map((item)=>{
         return `   
             <div class="cards container d-flex justify-content-around">
-            <div class=" mt-4 ">
-               <div class="card mb-3 " style="max-width: 340px; max-height: 100px; background: transparent; border: none;">
-                   <div class="row g-0">
-                     <div class="col-md-2">
+            <div class="mt-4">
+               <div class="card mb-3" style="width: 340px; height: 100px; background: transparent; border: none;">
+                   <div class="img-container2">
+                     <div class="img-container">
                        <img src=${item.img} class="" alt="" width="200px">
                      </div>
-                     <div class="col">
+                     <div class="">
                        <div class="card-body">
                            <div class="d-flex">
-                               <h5 class="card-title text-black fs-5">${item.title}</h5>
-                               <h5 class="card-title text-warning fs-5 ms-3">$${item.price}</h5>  
+                               <h5 class="card-title  text-black fs-5">${item.title}</h5>
+                               <h5 class="card-title  text-warning fs-5 ms-3">$${item.price}</h5>  
                            </div>
                          
                          <div class="dash-title"></div>
-                         <p class="card-text lead"> ${item.dsec}</p>
+                         <p class="card-text lead mb-5"> ${item.dsec}</p>
                        </div>
                      </div>
                    </div>
